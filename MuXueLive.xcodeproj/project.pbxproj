@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		20068914DF5F72CA7FBEFE9D /* Pods_MuXueLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29365BB87BE436257BC7DA7F /* Pods_MuXueLive.framework */; };
+		BB2BD2831E802949008123C8 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2BD2821E802949008123C8 /* IJKMediaFramework.framework */; };
 		BB5A5BCA1E252E0800E0F781 /* PlayerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A5BC91E252E0800E0F781 /* PlayerCardView.swift */; };
 		BB65A80A1E061425007B7893 /* LivePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB65A8091E061425007B7893 /* LivePlayerController.swift */; };
-		BB65A80C1E061912007B7893 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A80B1E061912007B7893 /* IJKMediaFramework.framework */; };
 		BB65A80E1E0619EE007B7893 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A80D1E0619EE007B7893 /* libz.tbd */; };
 		BB65A8101E0619FD007B7893 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A80F1E0619FD007B7893 /* libbz2.tbd */; };
 		BB65A8121E061A14007B7893 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A8111E061A14007B7893 /* AudioToolbox.framework */; };
@@ -48,9 +48,9 @@
 /* Begin PBXFileReference section */
 		29365BB87BE436257BC7DA7F /* Pods_MuXueLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuXueLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C12D28EEEEF5361B3B53C9 /* Pods-MuXueLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuXueLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuXueLive/Pods-MuXueLive.debug.xcconfig"; sourceTree = "<group>"; };
+		BB2BD2821E802949008123C8 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		BB5A5BC91E252E0800E0F781 /* PlayerCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCardView.swift; sourceTree = "<group>"; };
 		BB65A8091E061425007B7893 /* LivePlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivePlayerController.swift; sourceTree = "<group>"; };
-		BB65A80B1E061912007B7893 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		BB65A80D1E0619EE007B7893 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		BB65A80F1E0619FD007B7893 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		BB65A8111E061A14007B7893 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -96,6 +96,7 @@
 				BB65A8261E061AAB007B7893 /* UIKit.framework in Frameworks */,
 				BB65A8241E061AA3007B7893 /* QuartzCore.framework in Frameworks */,
 				BB65A8221E061A92007B7893 /* OpenGLES.framework in Frameworks */,
+				BB2BD2831E802949008123C8 /* IJKMediaFramework.framework in Frameworks */,
 				BB65A8201E061A85007B7893 /* MobileCoreServices.framework in Frameworks */,
 				BB65A81E1E061A71007B7893 /* MediaPlayer.framework in Frameworks */,
 				BB65A81C1E061A60007B7893 /* CoreVideo.framework in Frameworks */,
@@ -107,7 +108,6 @@
 				BB65A8101E0619FD007B7893 /* libbz2.tbd in Frameworks */,
 				BB65A80E1E0619EE007B7893 /* libz.tbd in Frameworks */,
 				20068914DF5F72CA7FBEFE9D /* Pods_MuXueLive.framework in Frameworks */,
-				BB65A80C1E061912007B7893 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +176,7 @@
 		BBEB3A941E05162100A1D0B0 /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				BB65A80B1E061912007B7893 /* IJKMediaFramework.framework */,
+				BB2BD2821E802949008123C8 /* IJKMediaFramework.framework */,
 				BBEB3A971E05164F00A1D0B0 /* Controller */,
 				BBEB3A961E05164700A1D0B0 /* View */,
 				BBEB3A951E05162800A1D0B0 /* Model */,
