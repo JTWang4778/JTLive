@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20068914DF5F72CA7FBEFE9D /* Pods_MuXueLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29365BB87BE436257BC7DA7F /* Pods_MuXueLive.framework */; };
+		BB5A5BCA1E252E0800E0F781 /* PlayerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A5BC91E252E0800E0F781 /* PlayerCardView.swift */; };
+		BB65A80A1E061425007B7893 /* LivePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB65A8091E061425007B7893 /* LivePlayerController.swift */; };
+		BB65A80C1E061912007B7893 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A80B1E061912007B7893 /* IJKMediaFramework.framework */; };
+		BB65A80E1E0619EE007B7893 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A80D1E0619EE007B7893 /* libz.tbd */; };
+		BB65A8101E0619FD007B7893 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A80F1E0619FD007B7893 /* libbz2.tbd */; };
+		BB65A8121E061A14007B7893 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A8111E061A14007B7893 /* AudioToolbox.framework */; };
+		BB65A8141E061A1E007B7893 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A8131E061A1E007B7893 /* VideoToolbox.framework */; };
+		BB65A8161E061A36007B7893 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A8151E061A36007B7893 /* AVFoundation.framework */; };
+		BB65A8181E061A42007B7893 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A8171E061A42007B7893 /* CoreGraphics.framework */; };
+		BB65A81A1E061A50007B7893 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A8191E061A50007B7893 /* CoreMedia.framework */; };
+		BB65A81C1E061A60007B7893 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A81B1E061A60007B7893 /* CoreVideo.framework */; };
+		BB65A81E1E061A71007B7893 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A81D1E061A71007B7893 /* MediaPlayer.framework */; };
+		BB65A8201E061A85007B7893 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A81F1E061A85007B7893 /* MobileCoreServices.framework */; };
+		BB65A8221E061A92007B7893 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A8211E061A92007B7893 /* OpenGLES.framework */; };
+		BB65A8241E061AA3007B7893 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A8231E061AA3007B7893 /* QuartzCore.framework */; };
+		BB65A8261E061AAB007B7893 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A8251E061AAB007B7893 /* UIKit.framework */; };
+		BB743B6F1E227C640094171F /* LiverCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB743B6E1E227C640094171F /* LiverCardView.xib */; };
+		BB743B711E227C750094171F /* LiverCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB743B701E227C750094171F /* LiverCardView.swift */; };
+		BB9E30BA1E0632C40014CE3A /* LivePlayerControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB9E30B91E0632C40014CE3A /* LivePlayerControlView.xib */; };
+		BB9E30BC1E0632E80014CE3A /* LivePlayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9E30BB1E0632E80014CE3A /* LivePlayerControlView.swift */; };
+		BBC521981E04CBA600C54D24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC521971E04CBA600C54D24 /* AppDelegate.swift */; };
+		BBC5219F1E04CBA600C54D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC5219E1E04CBA600C54D24 /* Assets.xcassets */; };
+		BBC521A21E04CBA600C54D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC521A01E04CBA600C54D24 /* LaunchScreen.storyboard */; };
+		BBEB3A901E050D5500A1D0B0 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3A8F1E050D5500A1D0B0 /* NetworkHelper.swift */; };
+		BBEB3A931E0513BE00A1D0B0 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3A921E0513BE00A1D0B0 /* UIViewExt.swift */; };
+		BBEB3A991E05167000A1D0B0 /* LiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3A981E05167000A1D0B0 /* LiveModel.swift */; };
+		BBEB3A9B1E0519C300A1D0B0 /* liveCreaterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3A9A1E0519C300A1D0B0 /* liveCreaterModel.swift */; };
+		BBEB3A9D1E051FDE00A1D0B0 /* LiveListControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3A9C1E051FDE00A1D0B0 /* LiveListControllerViewController.swift */; };
+		BBEB3AA01E05219D00A1D0B0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3A9F1E05219D00A1D0B0 /* BaseViewController.swift */; };
+		BBEB3AA21E0521B800A1D0B0 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3AA11E0521B800A1D0B0 /* BaseNavigationController.swift */; };
+		BBEB3AA41E0521DE00A1D0B0 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3AA31E0521DE00A1D0B0 /* MyTabBarController.swift */; };
+		BBEB3AAA1E0523CE00A1D0B0 /* CaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3AA91E0523CE00A1D0B0 /* CaptureController.swift */; };
+		BBEB3AAC1E052A5600A1D0B0 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3AAB1E052A5600A1D0B0 /* UIColorExt.swift */; };
+		BBEB3AAF1E0535B300A1D0B0 /* LiveListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBEB3AAE1E0535B300A1D0B0 /* LiveListCell.xib */; };
+		BBEB3AB11E0535F600A1D0B0 /* LiveListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3AB01E0535F600A1D0B0 /* LiveListCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29365BB87BE436257BC7DA7F /* Pods_MuXueLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuXueLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C12D28EEEEF5361B3B53C9 /* Pods-MuXueLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuXueLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuXueLive/Pods-MuXueLive.debug.xcconfig"; sourceTree = "<group>"; };
+		BB5A5BC91E252E0800E0F781 /* PlayerCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCardView.swift; sourceTree = "<group>"; };
+		BB65A8091E061425007B7893 /* LivePlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivePlayerController.swift; sourceTree = "<group>"; };
+		BB65A80B1E061912007B7893 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		BB65A80D1E0619EE007B7893 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BB65A80F1E0619FD007B7893 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		BB65A8111E061A14007B7893 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BB65A8131E061A1E007B7893 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		BB65A8151E061A36007B7893 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BB65A8171E061A42007B7893 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BB65A8191E061A50007B7893 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BB65A81B1E061A60007B7893 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		BB65A81D1E061A71007B7893 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		BB65A81F1E061A85007B7893 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BB65A8211E061A92007B7893 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BB65A8231E061AA3007B7893 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BB65A8251E061AAB007B7893 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BB743B6E1E227C640094171F /* LiverCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiverCardView.xib; sourceTree = "<group>"; };
+		BB743B701E227C750094171F /* LiverCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiverCardView.swift; sourceTree = "<group>"; };
+		BB9E30B91E0632C40014CE3A /* LivePlayerControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LivePlayerControlView.xib; sourceTree = "<group>"; };
+		BB9E30BB1E0632E80014CE3A /* LivePlayerControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivePlayerControlView.swift; sourceTree = "<group>"; };
+		BBC521941E04CBA600C54D24 /* MuXueLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuXueLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC521971E04CBA600C54D24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBC5219E1E04CBA600C54D24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBC521A11E04CBA600C54D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBC521A31E04CBA600C54D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBEB3A8F1E050D5500A1D0B0 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		BBEB3A921E0513BE00A1D0B0 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		BBEB3A981E05167000A1D0B0 /* LiveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveModel.swift; sourceTree = "<group>"; };
+		BBEB3A9A1E0519C300A1D0B0 /* liveCreaterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = liveCreaterModel.swift; sourceTree = "<group>"; };
+		BBEB3A9C1E051FDE00A1D0B0 /* LiveListControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveListControllerViewController.swift; sourceTree = "<group>"; };
+		BBEB3A9F1E05219D00A1D0B0 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BBEB3AA11E0521B800A1D0B0 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		BBEB3AA31E0521DE00A1D0B0 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		BBEB3AA91E0523CE00A1D0B0 /* CaptureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureController.swift; sourceTree = "<group>"; };
+		BBEB3AAB1E052A5600A1D0B0 /* UIColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		BBEB3AAE1E0535B300A1D0B0 /* LiveListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveListCell.xib; sourceTree = "<group>"; };
+		BBEB3AB01E0535F600A1D0B0 /* LiveListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveListCell.swift; sourceTree = "<group>"; };
+		BC48CF6138CDB509FF479935 /* Pods-MuXueLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuXueLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuXueLive/Pods-MuXueLive.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBC521911E04CBA500C54D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB65A8261E061AAB007B7893 /* UIKit.framework in Frameworks */,
+				BB65A8241E061AA3007B7893 /* QuartzCore.framework in Frameworks */,
+				BB65A8221E061A92007B7893 /* OpenGLES.framework in Frameworks */,
+				BB65A8201E061A85007B7893 /* MobileCoreServices.framework in Frameworks */,
+				BB65A81E1E061A71007B7893 /* MediaPlayer.framework in Frameworks */,
+				BB65A81C1E061A60007B7893 /* CoreVideo.framework in Frameworks */,
+				BB65A81A1E061A50007B7893 /* CoreMedia.framework in Frameworks */,
+				BB65A8181E061A42007B7893 /* CoreGraphics.framework in Frameworks */,
+				BB65A8161E061A36007B7893 /* AVFoundation.framework in Frameworks */,
+				BB65A8141E061A1E007B7893 /* VideoToolbox.framework in Frameworks */,
+				BB65A8121E061A14007B7893 /* AudioToolbox.framework in Frameworks */,
+				BB65A8101E0619FD007B7893 /* libbz2.tbd in Frameworks */,
+				BB65A80E1E0619EE007B7893 /* libz.tbd in Frameworks */,
+				20068914DF5F72CA7FBEFE9D /* Pods_MuXueLive.framework in Frameworks */,
+				BB65A80C1E061912007B7893 /* IJKMediaFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E5D73F214094B0FD9667C8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56C12D28EEEEF5361B3B53C9 /* Pods-MuXueLive.debug.xcconfig */,
+				BC48CF6138CDB509FF479935 /* Pods-MuXueLive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BBC5218B1E04CBA500C54D24 = {
+			isa = PBXGroup;
+			children = (
+				BBC521961E04CBA600C54D24 /* MuXueLive */,
+				BBC521951E04CBA600C54D24 /* Products */,
+				2E5D73F214094B0FD9667C8D /* Pods */,
+				C78500BE86105D657FDD14A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BBC521951E04CBA600C54D24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBC521941E04CBA600C54D24 /* MuXueLive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBC521961E04CBA600C54D24 /* MuXueLive */ = {
+			isa = PBXGroup;
+			children = (
+				BBEB3AAD1E052C3500A1D0B0 /* Classes */,
+				BBEB3A9E1E05217800A1D0B0 /* Base */,
+				BBEB3A911E05137C00A1D0B0 /* Extension */,
+				BBEB3A8E1E050D3500A1D0B0 /* NetworkHelper */,
+				BBC521971E04CBA600C54D24 /* AppDelegate.swift */,
+				BBC5219E1E04CBA600C54D24 /* Assets.xcassets */,
+				BBC521A01E04CBA600C54D24 /* LaunchScreen.storyboard */,
+				BBC521A31E04CBA600C54D24 /* Info.plist */,
+			);
+			path = MuXueLive;
+			sourceTree = "<group>";
+		};
+		BBEB3A8E1E050D3500A1D0B0 /* NetworkHelper */ = {
+			isa = PBXGroup;
+			children = (
+				BBEB3A8F1E050D5500A1D0B0 /* NetworkHelper.swift */,
+			);
+			name = NetworkHelper;
+			sourceTree = "<group>";
+		};
+		BBEB3A911E05137C00A1D0B0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BBEB3A921E0513BE00A1D0B0 /* UIViewExt.swift */,
+				BBEB3AAB1E052A5600A1D0B0 /* UIColorExt.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		BBEB3A941E05162100A1D0B0 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				BB65A80B1E061912007B7893 /* IJKMediaFramework.framework */,
+				BBEB3A971E05164F00A1D0B0 /* Controller */,
+				BBEB3A961E05164700A1D0B0 /* View */,
+				BBEB3A951E05162800A1D0B0 /* Model */,
+			);
+			name = Live;
+			sourceTree = "<group>";
+		};
+		BBEB3A951E05162800A1D0B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBEB3A981E05167000A1D0B0 /* LiveModel.swift */,
+				BBEB3A9A1E0519C300A1D0B0 /* liveCreaterModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BBEB3A961E05164700A1D0B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BBEB3AAE1E0535B300A1D0B0 /* LiveListCell.xib */,
+				BBEB3AB01E0535F600A1D0B0 /* LiveListCell.swift */,
+				BB9E30B91E0632C40014CE3A /* LivePlayerControlView.xib */,
+				BB9E30BB1E0632E80014CE3A /* LivePlayerControlView.swift */,
+				BB743B6E1E227C640094171F /* LiverCardView.xib */,
+				BB743B701E227C750094171F /* LiverCardView.swift */,
+				BB5A5BC91E252E0800E0F781 /* PlayerCardView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BBEB3A971E05164F00A1D0B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BBEB3A9C1E051FDE00A1D0B0 /* LiveListControllerViewController.swift */,
+				BB65A8091E061425007B7893 /* LivePlayerController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BBEB3A9E1E05217800A1D0B0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BBEB3A9F1E05219D00A1D0B0 /* BaseViewController.swift */,
+				BBEB3AA11E0521B800A1D0B0 /* BaseNavigationController.swift */,
+				BBEB3AA31E0521DE00A1D0B0 /* MyTabBarController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		BBEB3AA51E05236F00A1D0B0 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				BBEB3AA81E0523A100A1D0B0 /* Controller */,
+				BBEB3AA71E05239A00A1D0B0 /* View */,
+				BBEB3AA61E05237D00A1D0B0 /* Model */,
+			);
+			name = Capture;
+			sourceTree = "<group>";
+		};
+		BBEB3AA61E05237D00A1D0B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BBEB3AA71E05239A00A1D0B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BBEB3AA81E0523A100A1D0B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BBEB3AA91E0523CE00A1D0B0 /* CaptureController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BBEB3AAD1E052C3500A1D0B0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BBEB3A941E05162100A1D0B0 /* Live */,
+				BBEB3AA51E05236F00A1D0B0 /* Capture */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		C78500BE86105D657FDD14A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB65A8251E061AAB007B7893 /* UIKit.framework */,
+				BB65A8231E061AA3007B7893 /* QuartzCore.framework */,
+				BB65A8211E061A92007B7893 /* OpenGLES.framework */,
+				BB65A81F1E061A85007B7893 /* MobileCoreServices.framework */,
+				BB65A81D1E061A71007B7893 /* MediaPlayer.framework */,
+				BB65A81B1E061A60007B7893 /* CoreVideo.framework */,
+				BB65A8191E061A50007B7893 /* CoreMedia.framework */,
+				BB65A8171E061A42007B7893 /* CoreGraphics.framework */,
+				BB65A8151E061A36007B7893 /* AVFoundation.framework */,
+				BB65A8131E061A1E007B7893 /* VideoToolbox.framework */,
+				BB65A8111E061A14007B7893 /* AudioToolbox.framework */,
+				BB65A80F1E0619FD007B7893 /* libbz2.tbd */,
+				BB65A80D1E0619EE007B7893 /* libz.tbd */,
+				29365BB87BE436257BC7DA7F /* Pods_MuXueLive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBC521931E04CBA500C54D24 /* MuXueLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBC521A61E04CBA600C54D24 /* Build configuration list for PBXNativeTarget "MuXueLive" */;
+			buildPhases = (
+				617894D42721E8B873793218 /* [CP] Check Pods Manifest.lock */,
+				BBC521901E04CBA500C54D24 /* Sources */,
+				BBC521911E04CBA500C54D24 /* Frameworks */,
+				BBC521921E04CBA500C54D24 /* Resources */,
+				44460AD6716AD9B0644DA809 /* [CP] Embed Pods Frameworks */,
+				0FAF158A8E6D853E14387C47 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuXueLive;
+			productName = MuXueLive;
+			productReference = BBC521941E04CBA600C54D24 /* MuXueLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBC5218C1E04CBA500C54D24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = JTWang;
+				TargetAttributes = {
+					BBC521931E04CBA500C54D24 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BBC5218F1E04CBA500C54D24 /* Build configuration list for PBXProject "MuXueLive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBC5218B1E04CBA500C54D24;
+			productRefGroup = BBC521951E04CBA600C54D24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBC521931E04CBA500C54D24 /* MuXueLive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBC521921E04CBA500C54D24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC521A21E04CBA600C54D24 /* LaunchScreen.storyboard in Resources */,
+				BBEB3AAF1E0535B300A1D0B0 /* LiveListCell.xib in Resources */,
+				BB743B6F1E227C640094171F /* LiverCardView.xib in Resources */,
+				BBC5219F1E04CBA600C54D24 /* Assets.xcassets in Resources */,
+				BB9E30BA1E0632C40014CE3A /* LivePlayerControlView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FAF158A8E6D853E14387C47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuXueLive/Pods-MuXueLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44460AD6716AD9B0644DA809 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuXueLive/Pods-MuXueLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		617894D42721E8B873793218 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBC521901E04CBA500C54D24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBEB3A9B1E0519C300A1D0B0 /* liveCreaterModel.swift in Sources */,
+				BB5A5BCA1E252E0800E0F781 /* PlayerCardView.swift in Sources */,
+				BBEB3A991E05167000A1D0B0 /* LiveModel.swift in Sources */,
+				BBEB3A931E0513BE00A1D0B0 /* UIViewExt.swift in Sources */,
+				BB9E30BC1E0632E80014CE3A /* LivePlayerControlView.swift in Sources */,
+				BBEB3A901E050D5500A1D0B0 /* NetworkHelper.swift in Sources */,
+				BBEB3AAA1E0523CE00A1D0B0 /* CaptureController.swift in Sources */,
+				BB65A80A1E061425007B7893 /* LivePlayerController.swift in Sources */,
+				BBEB3AA21E0521B800A1D0B0 /* BaseNavigationController.swift in Sources */,
+				BBEB3AA01E05219D00A1D0B0 /* BaseViewController.swift in Sources */,
+				BBEB3A9D1E051FDE00A1D0B0 /* LiveListControllerViewController.swift in Sources */,
+				BB743B711E227C750094171F /* LiverCardView.swift in Sources */,
+				BBEB3AAC1E052A5600A1D0B0 /* UIColorExt.swift in Sources */,
+				BBEB3AB11E0535F600A1D0B0 /* LiveListCell.swift in Sources */,
+				BBC521981E04CBA600C54D24 /* AppDelegate.swift in Sources */,
+				BBEB3AA41E0521DE00A1D0B0 /* MyTabBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BBC521A01E04CBA600C54D24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBC521A11E04CBA600C54D24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBC521A41E04CBA600C54D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBC521A51E04CBA600C54D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBC521A71E04CBA600C54D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C12D28EEEEF5361B3B53C9 /* Pods-MuXueLive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MuXueLive",
+				);
+				INFOPLIST_FILE = MuXueLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = COM.JT.MuXueLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BBC521A81E04CBA600C54D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC48CF6138CDB509FF479935 /* Pods-MuXueLive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MuXueLive",
+				);
+				INFOPLIST_FILE = MuXueLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = COM.JT.MuXueLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBC5218F1E04CBA500C54D24 /* Build configuration list for PBXProject "MuXueLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC521A41E04CBA600C54D24 /* Debug */,
+				BBC521A51E04CBA600C54D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBC521A61E04CBA600C54D24 /* Build configuration list for PBXNativeTarget "MuXueLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC521A71E04CBA600C54D24 /* Debug */,
+				BBC521A81E04CBA600C54D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBC5218C1E04CBA500C54D24 /* Project object */;
+}

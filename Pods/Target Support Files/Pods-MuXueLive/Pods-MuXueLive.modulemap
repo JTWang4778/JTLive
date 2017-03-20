@@ -1,0 +1,6 @@
+framework module Pods_MuXueLive {
+  umbrella header "Pods-MuXueLive-umbrella.h"
+
+  export *
+  module * { export * }
+}
