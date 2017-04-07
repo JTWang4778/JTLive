@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		20068914DF5F72CA7FBEFE9D /* Pods_MuXueLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29365BB87BE436257BC7DA7F /* Pods_MuXueLive.framework */; };
-		BB2BD2831E802949008123C8 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2BD2821E802949008123C8 /* IJKMediaFramework.framework */; };
 		BB5A5BCA1E252E0800E0F781 /* PlayerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5A5BC91E252E0800E0F781 /* PlayerCardView.swift */; };
 		BB65A80A1E061425007B7893 /* LivePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB65A8091E061425007B7893 /* LivePlayerController.swift */; };
 		BB65A80E1E0619EE007B7893 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65A80D1E0619EE007B7893 /* libz.tbd */; };
@@ -31,6 +30,7 @@
 		BBC521981E04CBA600C54D24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC521971E04CBA600C54D24 /* AppDelegate.swift */; };
 		BBC5219F1E04CBA600C54D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC5219E1E04CBA600C54D24 /* Assets.xcassets */; };
 		BBC521A21E04CBA600C54D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC521A01E04CBA600C54D24 /* LaunchScreen.storyboard */; };
+		BBE028941E979A2700888E16 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE028931E979A2700888E16 /* IJKMediaFramework.framework */; };
 		BBEB3A901E050D5500A1D0B0 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3A8F1E050D5500A1D0B0 /* NetworkHelper.swift */; };
 		BBEB3A931E0513BE00A1D0B0 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3A921E0513BE00A1D0B0 /* UIViewExt.swift */; };
 		BBEB3A991E05167000A1D0B0 /* LiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEB3A981E05167000A1D0B0 /* LiveModel.swift */; };
@@ -48,7 +48,6 @@
 /* Begin PBXFileReference section */
 		29365BB87BE436257BC7DA7F /* Pods_MuXueLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuXueLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C12D28EEEEF5361B3B53C9 /* Pods-MuXueLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuXueLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuXueLive/Pods-MuXueLive.debug.xcconfig"; sourceTree = "<group>"; };
-		BB2BD2821E802949008123C8 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		BB5A5BC91E252E0800E0F781 /* PlayerCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCardView.swift; sourceTree = "<group>"; };
 		BB65A8091E061425007B7893 /* LivePlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivePlayerController.swift; sourceTree = "<group>"; };
 		BB65A80D1E0619EE007B7893 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -73,6 +72,7 @@
 		BBC5219E1E04CBA600C54D24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC521A11E04CBA600C54D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBC521A31E04CBA600C54D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE028931E979A2700888E16 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		BBEB3A8F1E050D5500A1D0B0 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		BBEB3A921E0513BE00A1D0B0 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		BBEB3A981E05167000A1D0B0 /* LiveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveModel.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 				BB65A8261E061AAB007B7893 /* UIKit.framework in Frameworks */,
 				BB65A8241E061AA3007B7893 /* QuartzCore.framework in Frameworks */,
 				BB65A8221E061A92007B7893 /* OpenGLES.framework in Frameworks */,
-				BB2BD2831E802949008123C8 /* IJKMediaFramework.framework in Frameworks */,
+				BBE028941E979A2700888E16 /* IJKMediaFramework.framework in Frameworks */,
 				BB65A8201E061A85007B7893 /* MobileCoreServices.framework in Frameworks */,
 				BB65A81E1E061A71007B7893 /* MediaPlayer.framework in Frameworks */,
 				BB65A81C1E061A60007B7893 /* CoreVideo.framework in Frameworks */,
@@ -176,7 +176,7 @@
 		BBEB3A941E05162100A1D0B0 /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				BB2BD2821E802949008123C8 /* IJKMediaFramework.framework */,
+				BBE028931E979A2700888E16 /* IJKMediaFramework.framework */,
 				BBEB3A971E05164F00A1D0B0 /* Controller */,
 				BBEB3A961E05164700A1D0B0 /* View */,
 				BBEB3A951E05162800A1D0B0 /* Model */,
@@ -323,6 +323,7 @@
 				TargetAttributes = {
 					BBC521931E04CBA500C54D24 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KG5ZNG86KM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -544,6 +545,7 @@
 			baseConfigurationReference = 56C12D28EEEEF5361B3B53C9 /* Pods-MuXueLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KG5ZNG86KM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MuXueLive",
@@ -561,6 +563,7 @@
 			baseConfigurationReference = BC48CF6138CDB509FF479935 /* Pods-MuXueLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KG5ZNG86KM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MuXueLive",
