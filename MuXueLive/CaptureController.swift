@@ -9,29 +9,102 @@
 import UIKit
 import LFLiveKit
 
-class CaptureController: BaseViewController {
+class CaptureController: BaseViewController, LFLiveSessionDelegate {
 
-    //MARK: - Getters and Setters
-    lazy var session: LFLiveSession = {
-        let audioConfiguration = LFLiveAudioConfiguration.default()
-        let videoConfiguration = LFLiveVideoConfiguration.defaultConfiguration(for: LFLiveVideoQuality.low3, outputImageOrientation: .portrait)
+    var session: LFLiveSession = {
+        let audioConfiguration = LFLiveAudioConfiguration.defaultConfiguration(for: LFLiveAudioQuality.high)
+        let videoConfiguration = LFLiveVideoConfiguration.defaultConfiguration(for: LFLiveVideoQuality.low3)
         let session = LFLiveSession(audioConfiguration: audioConfiguration, videoConfiguration: videoConfiguration)
-        
-        session?.delegate = self
-        session?.preView = self.view
         return session!
     }()
+    
+    // 视图
+    var containerView: UIView = {
+        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+//        containerView.backgroundColor = UIColor.clear
+        containerView.backgroundColor = UIColor.black
+        containerView.autoresizingMask = [UIViewAutoresizing.flexibleHeight, UIViewAutoresizing.flexibleHeight]
+        return containerView
+    }()
+    
+    // 状态Label
+    var stateLabel: UILabel = {
+        let stateLabel = UILabel(frame: CGRect(x: 20, y: 20, width: 80, height: 40))
+        stateLabel.text = "未连接"
+        stateLabel.textColor = UIColor.white
+        stateLabel.font = UIFont.systemFont(ofSize: 14)
+        return stateLabel
+    }()
+    
+    // 关闭按钮
+    var closeButton: UIButton = {
+        let closeButton = UIButton(frame: CGRect(x: UIScreen.main.bounds.width - 10 - 44, y: 20, width: 44, height: 44))
+        closeButton.setImage(UIImage(named: "close_preview"), for: UIControlState())
+        return closeButton
+    }()
+    
+    // 摄像头
+    var cameraButton: UIButton = {
+        let cameraButton = UIButton(frame: CGRect(x: UIScreen.main.bounds.width - 54 * 2, y: 20, width: 44, height: 44))
+        cameraButton.setImage(UIImage(named: "camra_preview"), for: UIControlState())
+        return cameraButton
+    }()
+    
+    // 摄像头
+    var beautyButton: UIButton = {
+        let beautyButton = UIButton(frame: CGRect(x: UIScreen.main.bounds.width - 54 * 3, y: 20, width: 44, height: 44))
+        beautyButton.setImage(UIImage(named: "camra_beauty"), for: UIControlState.selected)
+        beautyButton.setImage(UIImage(named: "camra_beauty_close"), for: UIControlState())
+        return beautyButton
+    }()
+    
+    // 开始直播按钮
+    var startLiveButton: UIButton = {
+        let startLiveButton = UIButton(frame: CGRect(x: 30, y: UIScreen.main.bounds.height - 50, width: UIScreen.main.bounds.width - 10 - 44, height: 44))
+        startLiveButton.layer.cornerRadius = 22
+        startLiveButton.setTitleColor(UIColor.black, for:UIControlState())
+        startLiveButton.setTitle("开始直播", for: UIControlState())
+        startLiveButton.titleLabel!.font = UIFont.systemFont(ofSize: 14)
+        startLiveButton.backgroundColor = UIColor(colorLiteralRed: 50, green: 32, blue: 245, alpha: 1)
+        return startLiveButton
+    }()
 
+
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+        self.tabBarController?.tabBar.isHidden = false
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // 申请麦克风和相机权限
-        requestAccessForAudio()
-        requestAccessForVideo()
         
-        startLive()
-        // Do any additional setup after loading the view.
+        session.delegate = self
+        session.preView = self.view
+        
+        self.requestAccessForVideo()
+        self.requestAccessForAudio()
+        self.view.backgroundColor = UIColor.clear
+        self.view.addSubview(containerView)
+        containerView.addSubview(stateLabel)
+        containerView.addSubview(closeButton)
+        containerView.addSubview(beautyButton)
+        containerView.addSubview(cameraButton)
+        containerView.addSubview(startLiveButton)
+        
+        cameraButton.addTarget(self, action: #selector(didTappedCameraButton(_:)), for:.touchUpInside)
+        beautyButton.addTarget(self, action: #selector(didTappedBeautyButton(_:)), for: .touchUpInside)
+        startLiveButton.addTarget(self, action: #selector(didTappedStartLiveButton(_:)), for: .touchUpInside)
+        closeButton.addTarget(self, action: #selector(self.didTappedCloseButton(_:)), for: .touchUpInside)
     }
+    
+    
     func requestAccessForVideo() -> Void {
         let status = AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo);
         switch status  {
@@ -76,33 +149,75 @@ class CaptureController: BaseViewController {
             break;
         }
     }
-
-
     
-    //MARK: - Event
-    func startLive() -> Void {
-        let stream = LFLiveStreamInfo()
-        stream.url = "rtmp://live.hkstv.hk.lxdns.com:1935/live/stream153";
-        session.startLive(stream)
+    //MARK: - Callbacks
+    
+    // 回调
+    func liveSession(_ session: LFLiveSession?, debugInfo: LFLiveDebug?) {
+        print("debugInfo: \(debugInfo?.currentBandwidth)")
     }
     
-    func stopLive() -> Void {
+    func liveSession(_ session: LFLiveSession?, errorCode: LFLiveSocketErrorCode) {
+        print("errorCode: \(errorCode.rawValue)")
+    }
+    
+    func liveSession(_ session: LFLiveSession?, liveStateDidChange state: LFLiveState) {
+        print("liveStateDidChange: \(state.rawValue)")
+        switch state {
+        case LFLiveState.ready:
+            stateLabel.text = "未连接"
+            break;
+        case LFLiveState.pending:
+            stateLabel.text = "连接中"
+            break;
+        case LFLiveState.start:
+            stateLabel.text = "已连接"
+            break;
+        case LFLiveState.error:
+            stateLabel.text = "连接错误"
+            break;
+        case LFLiveState.stop:
+            stateLabel.text = "未连接"
+            break;
+        default:
+            break;
+        }
+    }
+    
+    //MARK: - Events
+    
+    // 开始直播
+    func didTappedStartLiveButton(_ button: UIButton) -> Void {
+        startLiveButton.isSelected = !startLiveButton.isSelected;
+        if (startLiveButton.isSelected) {
+            startLiveButton.setTitle("结束直播", for: UIControlState())
+            let stream = LFLiveStreamInfo()
+            stream.url = "rtmp://live.hkstv.hk.lxdns.com:1935/live/stream153"
+            session.startLive(stream)
+        } else {
+            startLiveButton.setTitle("开始直播", for: UIControlState())
+            session.stopLive()
+        }
+    }
+    
+    // 美颜
+    func didTappedBeautyButton(_ button: UIButton) -> Void {
+        session.beautyFace = !session.beautyFace;
+        beautyButton.isSelected = !session.beautyFace
+    }
+    
+    // 摄像头
+    func didTappedCameraButton(_ button: UIButton) -> Void {
+        let devicePositon = session.captureDevicePosition;
+        session.captureDevicePosition = (devicePositon == AVCaptureDevicePosition.back) ? AVCaptureDevicePosition.front : AVCaptureDevicePosition.back;
+    }
+    
+    // 关闭
+    func didTappedCloseButton(_ button: UIButton) -> Void  {
         session.stopLive()
+        session.running = false
+        self.tabBarController?.selectedIndex = 0
     }
-    
-//    //MARK: - Callback
-//    func liveSession(session: LFLiveSession?, debugInfo: LFLiveDebug?){
-//        
-//    }
-//    func liveSession(session: LFLiveSession?, errorCode: LFLiveSocketErrorCode){
-//        
-//    }
-//    func liveSession(session: LFLiveSession?, liveStateDidChange state: LFLiveState){
-//        
-//    }
-}
 
-extension CaptureController: LFLiveSessionDelegate
-{
-    
+
 }
