@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.1.0)
-  - Kingfisher (3.2.1)
-  - LFLiveKit (2.5)
+  - Kingfisher (3.2.4)
+  - LFLiveKit (2.6)
   - MJRefresh (3.1.12)
   - SnapKit (3.0.2)
   - SVProgressHUD (2.0.4)
@@ -9,8 +9,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.1.0)
-  - Kingfisher (~> 3.2.1)
-  - LFLiveKit (~> 2.5)
+  - Kingfisher (~> 3.2.4)
+  - LFLiveKit (~> 2.6)
   - MJRefresh (~> 3.1.12)
   - SnapKit (~> 3.0.2)
   - SVProgressHUD (~> 2.0.4)
@@ -18,13 +18,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: e266cf991b933498df791e645e0d8ac294492153
-  Kingfisher: 64ef28c6d3d6f344e3ae2d7f5c9da80439505d99
-  LFLiveKit: 4361bd588ae0c9244589119ccdb1c30d14686414
+  Kingfisher: 8d80f39da403cd9c9ee11984e1655f4d6a566cdb
+  LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
   SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
 
-PODFILE CHECKSUM: 56ca2aea8f1376b9708bf72299707ba839cfd327
+PODFILE CHECKSUM: 4bcd5e450220c5463ff9ebd98cd9b54d51876cfa
 
 COCOAPODS: 1.1.1
